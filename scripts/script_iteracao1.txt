@@ -27,7 +27,7 @@ expecterror "Numero de casas para avancar invalido: ''" adicionaCasa id="C4" cas
 expecterror "Numero de casas para avancar invalido: 'null'" adicionaCasa id="C4" casa="AVANCA" param=
 expecterror "ID de casa invalido: ''" adicionaCasa id="C6" casa="IR_PARA" param=""
 expecterror "ID de casa invalido: 'null'" adicionaCasa id="C6" casa="IR_PARA" param=
-# expecterror "Nao existe casa com id 'xyz'" adicionaCasa id="C6" casa="IR_PARA" param="xyz"
+expecterror "Nao existe casa com id 'xyz'" adicionaCasa id="C6" casa="IR_PARA" param="xyz"
 
 
 adicionaCasa id="C1" casa="REPETE" param=
