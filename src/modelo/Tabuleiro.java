@@ -70,8 +70,11 @@ public class Tabuleiro {
 		if(casa.equals("AVANCA") && !isInteiro(param))
 			throw new TabuleiroException("Numero de casas para avancar invalido: '" + param + "'");
 		
-		if (casa.equals("IR_PARA") && !isCasaExistente(param))
+		if (casa.equals("IR_PARA") && (param == null || param.equals("")))
             throw new TabuleiroException("ID de casa invalido: '" + param + "'");
+		
+		if (casa.equals("IR_PARA") && !isCasaExistente(param))
+            throw new TabuleiroException("Nao existe casa com id '" + param + "'");
 		return true;
 	}
 	
